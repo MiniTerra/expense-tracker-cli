@@ -186,6 +186,11 @@ def export_to_csv():
 def main():
 
     parser = argparse.ArgumentParser(description = "Expense tracker")
+
+    if len(os.sys.argv) == 1:
+        parser.print_help()
+        return
+
     subparsers = parser.add_subparsers(dest = "command")
 
     add_parser = subparsers.add_parser("add", help = "Add expenses")
