@@ -32,7 +32,7 @@ def save_expenses(data):
 
 def add_expenses(amount, category, desc):
 
-    if amount < 0:
+    if amount <= 0:
         print("The amount must be positive.")
         return
 
@@ -112,7 +112,7 @@ def delete_expense(expense_id):
 def update_expense(expense_id, new_amount, new_category, new_desc):
     expenses = load_expenses()
     found = False
-    updated = True
+    updated = False
 
     for exp in expenses:
         if exp["id"] == expense_id:
@@ -129,7 +129,7 @@ def update_expense(expense_id, new_amount, new_category, new_desc):
                 updated = True
 
             if new_desc is not None:
-                exp["description"] = new_desc.lower()
+                exp["description"] = new_desc
                 print(f"Description updated to {new_desc}")
                 updated = True
 
