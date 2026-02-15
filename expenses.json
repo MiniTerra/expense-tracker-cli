@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "amount": 20.0,
+        "category": "food",
+        "description": "Pizza",
+        "date": "2026-02-15"
+    },
+    {
+        "id": 2,
+        "amount": 10.0,
+        "category": "drinks",
+        "description": "Pepsi",
+        "date": "2026-02-15"
+    },
+    {
+        "id": 3,
+        "amount": 50.0,
+        "category": "clothes",
+        "description": "shirt",
+        "date": "2026-02-15"
+    }
+]
